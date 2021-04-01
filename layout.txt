@@ -1,0 +1,66 @@
+All * = future features, skip for initial release
+
+Initial screen
+  start game
+  high scores
+  *options
+
+  Scoring - The scoring is roughly number of lines of 3 * chain * level+1 * 30,
+  with level+1 points being awarded for each half-block of soft drop used.
+
+Game rules
+  Game field size = 6 x 12 up to 7 x 18
+  Colors of gems = 4 to 6 (change based on difficulty selected)
+  Trimino = 3 random jewels in vertical line
+  trimino drops from top middle
+  trimino falls at steady rate
+  match 3 horizontally, vertically, or diagonally scores and removes jewels
+  when any jewel touches top of screen or score = 99,999,999, end game
+  *Level change based on score
+  *increase fall rate based on Level
+
+Trimino properties
+  3 Jewels in vertical stack/column
+  jewel colors and shapes
+    red circle
+    blue vertical rectangle
+    yellow square
+    green octagon
+    orange up/down point hexagon
+    purple side point hexagon
+
+variables used
+  current (in play) trimino
+    jewel 1
+    jewel 2
+    jewel 3
+    position
+  next trimino
+    jewel 1
+    jewel 2
+    jewel 3
+  score
+  cascade chain (number of matches with single trimino drop)
+  user initials (for score)
+
+Board state
+  track board state
+  check for matches
+  drop jewels over empty space
+  keep jewels in bounds
+
+start with single trimino drop from top of screen
+give option to move left, right, and shift gems
+
+Controls
+  left arrow = move trimino left
+  right arrow = move trimino right
+  up arrow = shift gems down
+  *down arrow = softdrop
+
+
+  *2nd player
+  *w = shift gems down
+  *a = move trimino left
+  *d = move trimino right
+  *s = softdrop

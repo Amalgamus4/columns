@@ -6,3 +6,35 @@
   text-align: center;
   padding: 10px;
 }
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-template-rows: repeat(12,1fr);
+  border: 2px solid black;
+  width: 192px;
+  height: 384px;
+  margin: 20px 50px;
+}
+
+.grid-square {
+  border: 1px dotted #ddd;
+  height: 30px;
+  width: 30px;
+}
+
+.next-piece-area{
+  display: inline;
+  float: right;
+  text-align: right;
+}
+
+.score-area{
+  padding: 200px 20px;
+}
+.game-area {
+  display: flex;
+}
+.next-piece-area{
+  padding: 20px 20px;
+}
